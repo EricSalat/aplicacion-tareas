@@ -1,36 +1,44 @@
 /*Estrucutra principal campo de texto*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .tarea-formulario {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .tarea-input {
-    width: 350px;
-    font-size: 18px;
-    background-color: white;
-    padding: 10px 32px 10px 16px;
-    border-radius: 4px 0 0 4px;
-    border: 2px solid #00471b;
+  width: 350px;
+  font-size: 18px;
+  background-color: white;
+  padding: 10px 32px 10px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #00471b;
+  outline: none;
 }
 
 /*Boto Agregar Tarea*/
 
 .tarea-boton {
-    padding: 12px;
-    font-size: 18px;
-    font-family: Roboto, sans-serif;
-    border: none;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-    outline: none;
-    background-color: #00471b;
-    color: #fff;
-    text-transform: capitalize;
+  padding: 12px;
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background-color: #00471b;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+@media (max-width: 736px) {
+  .tarea-boton {
+    border-radius: 5px;
+    margin-top: 20px;
+  }
 }
